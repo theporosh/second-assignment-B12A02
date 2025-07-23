@@ -1,1 +1,106 @@
- 
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+.text-gray{
+    color: #8987A1;
+}
+.text-bold{
+    color: #252432;
+    font-weight: 700;
+}
+.text-primary{
+    color: #000000;
+}
+.text-second{
+    color: #E95A08;
+}
+
+/* Header Styles */
+
+/* NavBar Related Styles */
+
+.navbar{
+    height: 71px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dotted red;
+}
+.logo-pic{
+    width: 135px;
+    height: 82px;
+    border: 1px solid tomato;
+}
+.nav-item{
+     list-style: none;
+     margin-right: 48px;   
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav-icon{
+    list-style: none;
+    margin-right: 10px;
+    
+}
+.cart-icon{
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.navbar, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.banner{
+    align-items: end;
+    border: 1px solid tomato;
+    margin-top: 120px;
+}
+.banner-part{
+    max-width: 570px;
+}
+.banner-title{
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 4.0625rem;
+    border: 1px solid red;
+}
+.banner-description{
+    margin-bottom: 0px;
+    border: 1px dotted blue;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.banner-ig{
+    border: 1px solid aquamarine;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+      
+}
+
