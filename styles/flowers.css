@@ -186,11 +186,57 @@
      font-size: 1.375rem;
 }
 
+/* join section styles */
+.join-section{
+    height: 533px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.join-box{
+      text-align: center;
+      width: 100%;
+}
+.join-form{
+      margin-top: 23px;
+      justify-content: center;
+      align-items: center;
+}
+.join-title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+.join-form input[type="email"] {
+   width: 644px;
+   max-width: 100%;
+   padding: 15px;
+   border: none;
+   font-size: 1rem;
+   color: rgba(0, 0, 0, 0.5);
+}
+.join-form button {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 18px 50px;
+    width: 270px;
+    height: 50px;
+    border: none;
+}
+
 
 
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
+      /* navbar responsive */
         .navbar{
             max-height: 38px;
             max-width: 362px;
@@ -203,6 +249,7 @@
             width: 63px;
             height: 38px;
         }
+        /* banner section responsive */
        .banner-image{
            margin-top: 20px;
            margin-bottom: 28px;
@@ -216,6 +263,8 @@
     .banner{
             flex-direction: column-reverse;
        }
+
+      /* plant section responsive  */
     .plant-container{
             max-width: 362px;
             margin: 0 auto;
@@ -241,6 +290,8 @@
         gap: 10px;
         max-width: 362px;
    }
+
+   /* plants lover section responsive */
    .lover-image{
     max-width: 100%;
     height: auto;
@@ -258,4 +309,19 @@
    .plant-lover-description{
        font-size: 0.875rem;
    }
+  
+   /* join section responsive */
+   .join-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+   .join-form input[type="email"],
+    .join-form button {
+        width: 100%;
+        max-width: 100%;
+    }
+   .join-title {
+        font-size: 1.6rem;
+    }
 }
