@@ -1,15 +1,12 @@
 /* Font Style */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -20,11 +17,6 @@
 }
 
 /* Shared Styles */
-
-.plants-section{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 .display-flex{
     display: flex;
@@ -116,7 +108,10 @@
 }
 
 /* Plants Section styles */
-
+.plants-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .plant-container{
     margin-top: 120px;
     text-align: center;
@@ -143,11 +138,11 @@
     height: 486px;
     margin-bottom: 30px;
 } 
-.plant-card img{
+/* .plant-card img{
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-}
+} */
 
 .plant-name{
     color: #111111;
@@ -163,6 +158,34 @@
 .plant-box{
    text-align: center;
 }
+
+/* Plants Lover Section */
+.plants-lover-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plants-lover-container{
+         margin-top: 210px;
+}
+.lover-image{
+    max-width: 100%;
+    height: auto;
+}
+.plants-lover-content{
+    width: 540px;
+    height: 521px;
+    margin-left: 60px;
+}
+.plants-lover-title{
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+.plant-lover-description{
+     color: rgba(0, 0, 0, 0.5);
+     font-weight: 400;
+     font-size: 1.375rem;
+}
+
 
 
 /* responsive media query */
@@ -204,12 +227,35 @@
     .plant-description{
         font-size: 0.875rem;
     }
-    .plant-card img{
+    .plant-name{
+        font-size: 1rem;
+    }
+    .plant-price{
+        font-size: 1rem;
+    }
+    /* .plant-card img{
        width: 100%;
-   }
+   } */
     .plant-card-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        max-width: 362px;
    }
-
+   .lover-image{
+    max-width: 100%;
+    height: auto;
+   }
+    .plants-lover-container{
+        flex-direction: column;
+    }
+    .plants-lover-content{
+       max-width: 100%; 
+       margin-left: 0px;
+   }
+   .plants-lover-title{
+       font-size: 1.5rem;
+   }
+   .plant-lover-description{
+       font-size: 0.875rem;
+   }
 }
